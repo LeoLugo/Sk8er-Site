@@ -1,0 +1,295 @@
+
+body {
+	box-sizing: border-box;
+	background-image: url("assets/bg.jpg");
+	padding:0;
+	margin:0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: fixed;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.imgdark {
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: rgba(0,0,0,0.65);
+	position: fixed;
+}
+.container {
+	width: 1000px;
+	position: relative;
+	margin: auto;
+	padding-top: 5px;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.sub {
+	margin-right: 30px;
+	color: white;
+}
+
+.logo {
+	width: 50px;
+	height: 45px;
+	margin-left: 10px;
+	box-shadow: 0px 3px 0px 0px rgba(211,211,211,0.4);
+}
+
+.tabs {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+	margin-bottom: 10px;
+	height: 30px;
+	font-family: helvetica;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.tabs div {
+	background-color: #B12B32;
+	width: 235px;
+	box-shadow: 0px 3px 0px 0px rgba(211,211,211,0.4);
+}
+
+.hero {
+	background-image: url("assets/top-image.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: 220px -105px;
+	border: 5px solid white;
+	box-shadow: 0px 3px 0px 0px rgba(211,211,211,0.4);
+}
+
+.tribox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	height: 300px;
+	font-size: 11px;
+}
+
+.tri {
+	margin-right:20px;
+	background-color: white;
+	text-align: center;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 33.3%;
+	box-shadow: 0px 3px 0px 0px rgba(211,211,211,0.4);
+}
+.tri:last-child {
+	margin-right:0;
+}
+
+#lance {
+	background-image: url("assets/sk8er-4.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: -350px 0px;
+	width:320px;
+	text-align: center;
+	line-height: 400px;
+	height: 400px;
+	border: 5px solid white;
+}
+
+#rodney {
+	background-image: url("assets/sk8er-3.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	width:319px;
+	text-align: center;
+	line-height: 400px;
+	border: 5px solid white;
+	margin-left: 18px;
+	background-position: -150px;
+}
+
+#steve {
+	background-image: url("assets/sk8er-1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+	flex-grow:1;
+	text-align: center;
+	line-height: 200px;
+	border: 5px solid white;
+	margin-top: 9px;
+	margin-right: 9px;
+}
+
+#tommy {
+	background-image: url("assets/sk8er-2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width:97%;
+	background-position: -610px;
+	text-align: center;
+	line-height: 600px;
+	border: 5px solid white;
+	margin-left: 11px;
+}
+
+.pics{
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	width:100%;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.boards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: white;
+	margin-bottom: 35px;
+	border: 10px solid white;
+	margin-top: 20px;
+	box-shadow: 0px 3px 0px 0px rgba(211,211,211,0.4);
+}
+
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+	margin-bottom: 20px;
+	box-shadow: 0px 3px 0px 0px rgba(211,211,211,0.4);
+}
+.contactp, .contactform {
+	width: 50%;
+}
+
+input, textarea {
+	width: 300px;
+	border-style: solid;
+	border-color: #b2b2b2;
+	margin-bottom: 10px;
+	border-width: 4px 1px 1px 4px;
+	line-height: 4;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.contactform {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 30px;
+	padding-top: 10px;
+}
+
+button {
+	width: 125px;
+}
+
+.tabs a {
+	color: white;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+#skull {
+	position: relative;
+	z-index: 2;
+}
+
+#grid {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	width: 990px;
+	height: 241px;
+	opacity: .3;
+	object-fit: cover;
+}
+
+.pics1 {
+	display: flex;
+	flex-wrap: wrap;
+	width:66.6%;
+}
+
+.pics2 {
+	width: 33.3%;
+}
+
+.tri > a {
+	color: #B23D45;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+textarea {
+	resize: none;
+}
+
+button {
+	margin-bottom: 20px;
+	width: 150px;
+	height: 28px;
+	background-color: #B12B32;
+	color: white;
+}
+
+.contactp {
+	padding-left: 50px;
+	padding-top: 10px;
+}
+
+.arrow {
+	height: 50px;
+	width: 100px;
+	position: absolute;
+	background-color: #B12B32;
+	top: 900px;
+	left: -150px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+}
+
+.arrow::after {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 25px 0 25px 25px;
+	border-color: transparent transparent transparent #B12B32;
+	content: "";
+	position: absolute;
+	left: 100px;
+}
+
+.arrow > div {
+	position: absolute;
+	left: 10px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 800;
+}
+
+.guys {
+	box-shadow: 0px 3px 0px 0px rgba(211,211,211,0.4);
+}
